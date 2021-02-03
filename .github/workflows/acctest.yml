@@ -73,6 +73,7 @@ jobs:
       env:
         TF_ACC: "1"
         TF_ACC_TERRAFORM_VERSION: ${{ matrix.terraform }}
+        TF_LOG: trace
 
         UNIFI_USERNAME: tfacctest
         UNIFI_PASSWORD: tfacctest1234
